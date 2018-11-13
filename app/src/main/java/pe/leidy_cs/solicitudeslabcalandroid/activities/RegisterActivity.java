@@ -164,7 +164,7 @@ public class RegisterActivity extends AppCompatActivity {
             bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
             byte[] byteArray = stream.toByteArray();
 
-            RequestBody requestFile = RequestBody.create(MediaType.parse("image/jpeg"), byteArray);
+            RequestBody requestFile = RequestBody.create(MediaType.parse("image/jpg"), byteArray);
             MultipartBody.Part imagenPart = MultipartBody.Part.createFormData("imagen", file.getName(), requestFile);
 
             RequestBody correoPart = RequestBody.create(MultipartBody.FORM, correo);

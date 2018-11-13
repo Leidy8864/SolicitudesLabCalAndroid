@@ -26,7 +26,7 @@ public interface ApiService {
                                          @Field("tipo") String tipo,
                                          @Field("motivo") String motivo);
     @Multipart
-    @POST("/api/solicitudes/")
+    @POST("/rest/solicitudes/")
     Call<Solicitud> createSolicitudWithImage(
             @Part("correo") RequestBody correo,
             @Part("tipo") RequestBody tipo,
