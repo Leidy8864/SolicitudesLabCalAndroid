@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SolicitudesLabCalAndroid</string>
+    <string-array name="tipos_arrays">
+        <item>Solicitud de matricula</item>
+        <item>Solicitud de ingreso</item>
+        <item>Solicitud de certificado</item>
+    </string-array>
+</resources>
